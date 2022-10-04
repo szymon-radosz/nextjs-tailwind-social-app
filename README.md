@@ -1,2 +1,7 @@
-# nextjs-tailwind-social-app
-Just made some playground to try next.js and tailwind css
+#social-app-web
+
+next.js, tailwind playground
+
+## Started pulled from repo
+
+https://github.com/theodorusclarence/ts-nextjs-tailwind-starter
