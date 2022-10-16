@@ -1,22 +1,27 @@
+import Image from 'next/image';
 import React from 'react';
+
+import Logo from './../../assets/images/logo.png';
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-900'>
+    <footer className='bg-orange-200'>
       <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
         <div className='lg:flex lg:gap-8'>
           <div>
-            <span className='block h-10 w-32 rounded-lg bg-gray-700'></span>
+            <span className='block h-10 w-32 rounded-lg'>
+              <Image src={Logo} alt='Logo' width={150} height={150} />
+            </span>
           </div>
 
           <div className='mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16'>
             <div className='col-span-2'>
               <div>
-                <h2 className='text-2xl font-bold text-white'>
+                <h2 className='text-2xl font-bold text-black'>
                   Get the latest news!
                 </h2>
 
-                <p className='mt-6 text-gray-400'>
+                <p className='text-black-400 mt-6'>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
                   non cupiditate quae nam molestias.
                 </p>
@@ -24,7 +29,7 @@ const Footer = () => {
             </div>
 
             <div className='col-span-2 lg:col-span-3 lg:flex lg:items-end'>
-              <form className='w-full text-white'>
+              <form className='w-full text-black'>
                 <label
                   // for="email"
                   className='sr-only'
@@ -33,7 +38,7 @@ const Footer = () => {
                   Email{' '}
                 </label>
 
-                <div className='border border-white/10 p-2 sm:flex sm:items-center'>
+                <div className='border border-black/10 p-2 sm:flex sm:items-center'>
                   <input
                     className='h-12 w-full border-none bg-transparent p-3 text-sm font-medium uppercase tracking-widest placeholder-gray-400'
                     type='email'
@@ -42,7 +47,7 @@ const Footer = () => {
                   />
 
                   <button
-                    className='mt-1 h-12 w-full bg-red-700 px-6 py-3 text-sm font-bold uppercase tracking-wide sm:ml-4 sm:mt-0 sm:w-auto sm:flex-shrink-0'
+                    className='mt-1 h-12 w-full bg-orange-400 px-6 py-3 text-sm font-bold uppercase tracking-wide sm:ml-4 sm:mt-0 sm:w-auto sm:flex-shrink-0'
                     type='submit'
                   >
                     Sign Up
@@ -51,10 +56,10 @@ const Footer = () => {
               </form>
             </div>
 
-            <div className='col-span-2 border-t border-white/10 pt-6 sm:col-span-1'>
-              <p className='font-bold text-white'>Services</p>
+            <div className='col-span-2 border-t border-black/10 pt-6 sm:col-span-1'>
+              <p className='font-bold text-black'>Services</p>
 
-              <nav className='mt-6 flex flex-col space-y-4 text-sm text-gray-300'>
+              <nav className='text-black-300 mt-6 flex flex-col space-y-4 text-sm'>
                 <a className='inline-block' href=''>
                   {' '}
                   1on1 Coaching{' '}
@@ -78,10 +83,10 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className='col-span-2 border-t border-white/10 pt-6 sm:col-span-1'>
-              <p className='font-bold text-white'>Company</p>
+            <div className='col-span-2 border-t border-black/10 pt-6 sm:col-span-1'>
+              <p className='font-bold text-black'>Company</p>
 
-              <nav className='mt-6 flex flex-col space-y-4 text-sm text-gray-300'>
+              <nav className='text-black-300 mt-6 flex flex-col space-y-4 text-sm'>
                 <a className='inline-block' href=''>
                   {' '}
                   About{' '}
@@ -101,10 +106,10 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className='col-span-2 border-t border-white/10 pt-6 sm:col-span-1'>
-              <p className='font-bold text-white'>Helpful Links</p>
+            <div className='col-span-2 border-t border-black/10 pt-6 sm:col-span-1'>
+              <p className='font-bold text-black'>Helpful Links</p>
 
-              <nav className='mt-6 flex flex-col space-y-4 text-sm text-gray-300'>
+              <nav className='text-black-300 mt-6 flex flex-col space-y-4 text-sm'>
                 <a className='inline-block' href=''>
                   {' '}
                   Contact{' '}
@@ -120,10 +125,10 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className='col-span-2 border-t border-white/10 pt-6 sm:col-span-1'>
-              <p className='font-bold text-white'>Legal</p>
+            <div className='col-span-2 border-t border-black/10 pt-6 sm:col-span-1'>
+              <p className='font-bold text-black'>Legal</p>
 
-              <nav className='mt-6 flex flex-col space-y-4 text-sm text-gray-300'>
+              <nav className='text-black-300 mt-6 flex flex-col space-y-4 text-sm'>
                 <a className='inline-block' href=''>
                   {' '}
                   Accessibility{' '}
@@ -143,10 +148,10 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className='col-span-2 border-t border-white/10 pt-6 sm:col-span-1'>
-              <p className='font-bold text-white'>Downloads</p>
+            <div className='col-span-2 border-t border-black/10 pt-6 sm:col-span-1'>
+              <p className='font-bold text-black'>Downloads</p>
 
-              <nav className='mt-6 flex flex-col space-y-4 text-sm text-gray-300'>
+              <nav className='text-black-300 mt-6 flex flex-col space-y-4 text-sm'>
                 <a className='inline-block' href=''>
                   {' '}
                   Marketing Calendar{' '}
@@ -158,7 +163,7 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className='col-span-2 flex gap-4 text-gray-500 lg:col-span-5'>
+            <div className='text-black-500 col-span-2 flex gap-4 lg:col-span-5'>
               <a
                 className='hover:opacity-75'
                 href=''
@@ -268,13 +273,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='mt-12 border-t border-white/10 pt-8'>
+        <div className='mt-12 border-t border-black/10 pt-8'>
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
-            <p className='text-center text-xs text-gray-400 lg:text-left'>
+            <p className='text-black-400 text-center text-xs lg:text-left'>
               Copyright &copy; 2022. Company Name. All rights reserved.
             </p>
 
-            <nav className='flex justify-center gap-4 text-xs text-gray-400 lg:justify-end'>
+            <nav className='text-black-400 flex justify-center gap-4 text-xs lg:justify-end'>
               <a href=''> Terms & Conditions </a>
               <a href=''> Privacy Policy </a>
               <a href=''> Cookies </a>
